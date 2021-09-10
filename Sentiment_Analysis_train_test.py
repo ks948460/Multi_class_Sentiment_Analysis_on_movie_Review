@@ -75,7 +75,7 @@ model.add(Bidirectional(LSTM(128, return_sequences=False),name="Lstm2"))
 model.add(Dense(5, activation='softmax'))
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
-model.fit(X_train, y_train, epochs=5,batch_size=64,validation_split=0.2,verbose=1)
+model.fit(X_train, y_train, epochs=50,batch_size=64,validation_split=0.2,verbose=1)
 print(model.summary())
 
 
